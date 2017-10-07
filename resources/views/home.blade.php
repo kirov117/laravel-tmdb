@@ -59,7 +59,11 @@
                 </div>
 
                 <div class="panel-body">
-                    -
+                    <ul>
+                        <li>For the sake of evaluation, I left the deployment steps to be run manually. For a standard deployment though, they most certainly can be bundled in a single script/command or queued inside of an automation framework.</li>
+                        <li>It would have been quicker to use the TMDB Laravel wrapper. Instead, I opted to implement a basic API interface using Guzzle for better code evaluation.</li>
+                        <li><strong>DataTables</strong> would have been a great alternative for a paginated table.</li>
+                    </ul>
                 </div>
             </div>
         </div>
