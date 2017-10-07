@@ -70,7 +70,7 @@ class TMDBManager
     }
 
     /**
-     * Retrieves a movie's details
+     * Retrieve details for a movie
      * @param  integer $id
      * @return array
      */

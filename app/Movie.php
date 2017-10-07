@@ -8,6 +8,6 @@ class Movie extends Model
 {
     public function genres()
     {
-    	return $this->hasManyThrough(Genre::class, MovieGenre::class, 'movie_id', 'id');
+    	return $this->belongsToMany(Genre::class, 'movie_genres');
     }
 }

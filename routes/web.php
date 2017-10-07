@@ -17,11 +17,14 @@ Route::get('/', [
 ]);
 
 Route::get('/home', function() {
-	return Redirect::route('home');
+    return Redirect::route('home');
 });
 
 Auth::routes();
 
 Route::group(['middleware' => ['auth']], function() {
-	// TODO routes
+    Route::get('/movie/details/{id}', [
+        'uses' => 'HomeController@movieDetails',
+        'as'   => 'movie.details'
+    ]);
 });

@@ -1,0 +1,51 @@
+.movie-genre {
+	display: inline-block;
+	padding: 1px 3px;
+	color: $brand-primary;
+	border: 1px dotted $brand-primary;
+	border-radius: 3px;
+}
+
+.home {
+
+	table {
+		.link {
+			cursor: pointer;
+		}
+	}
+
+}
+
+.modal {
+	.modal-loader {
+		text-align: center;
+
+		i { color: $brand-primary; }
+		p {
+			font-weight: bold;
+			color: $brand-primary;
+		}
+	}
+
+	.modal-section {
+		display: none;
+	}
+
+	.poster {
+		text-align: center;
+		margin-bottom: 20px;
+
+		img {
+			max-width: 250px;
+			border-radius: 30px;
+			box-shadow: 0px 10px 15px rgba(0, 0, 0, .25);
+		}
+	}
+
+	.table-rows {
+		padding-left: 15px;
+		padding-right: 15px;
+
+		td { border-top: none !important; }
+	}
+}
